@@ -21,7 +21,7 @@ rs.MoveLast()
 params = {}
 def get_Inf(code):
     params['Barcode'] =code
-    #r = requests.get("http://203.91.45.184:8010/gtin/SearchGtin", data=params)
+    #r = requests.get("/gtin/SearchGtin", data=params)
     Trans=eval(r.text) 
     return(Trans)
     
